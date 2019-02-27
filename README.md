@@ -1,4 +1,4 @@
-# Tcp by ReactorNetty
+# ReactorNetty
 
 1. Tcp서버에서 Reactor 활용을 위해 ReactorNetty 서버를 이용한다.
 기존 reactor.netty.ipc 패키지에서 -> reactor.netty로 변경되었다.

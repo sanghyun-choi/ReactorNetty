@@ -8,7 +8,7 @@ ReactorNetty로 변경되면서 기존 Netty서버 구성에 들이는 코드보
 # TcpServer
 TcpServer 객체를 통해서 decorator 패턴으로 계속해서 handler와 옵션을 추가해서 생성된다.
 handler는 FunctionalInterface의 형태로 대부분 등록되어 차 후에 이벤트가 일어나면 실행된다.
-라이프 사이클에 존재하는듯 하다.
+라이프 사이클 존재하는듯 하다.
 <br/>
 # doOn...종류
 doOn종류의 메서드를 통해 handler를 통해 codec을 등록한다.

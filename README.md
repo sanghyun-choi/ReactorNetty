@@ -1,6 +1,6 @@
 # ReactorNetty
 
-# Tcp서버에서 Reactor 활용을 위해 ReactorNetty 서버 
+# Tcp서버에서 Reactor 활용
 기존 reactor.netty.ipc 패키지에서 -> reactor.netty로 변경되었다.(0.8.5버전)
 ReactorNetty로 변경되면서 기존 Netty서버 구성에 들이는 코드보다 더 간결해졌다.
 기존과 동일하게 TCP, HTTP, UDP 등 프로토콜을 지원한다.

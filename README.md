@@ -38,5 +38,8 @@ doOn종류의 메서드를 통해 handler를 통해 codec을 등록한다.
 
 # LoopResource
 - TcpServer.runOn을 통해 기존의 Netty처럼 EventLoop 설정이 가능하다.
-- 자세한 내
+- Thread workerCount 및 selectCount를 설정하고 name을 설정하여 로그에 표현 가능하다.
+<br/>
+
+# TCP 
 

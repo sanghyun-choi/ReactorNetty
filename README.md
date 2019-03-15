@@ -6,18 +6,21 @@ ReactorNetty는 기존 Netty서버 구성에 들이는 코드보다 더 간결�
 기존과 동일하게 TCP, HTTP, UDP 등 프로토콜을 지원한다.
 Reactor코드를 적용할 수 있고, 흐름 자체가 Reactor 방식으로 적용되어 있다.
 <br/>
+
 # TcpServer
 TcpServer 객체의 create 메소드로 서버를 생성할 수 있다.
 이 때 내부 구현을 보면 decorator패턴 형태로 계속해서 기능을 추가한다.
 기존에 Netty에서 설정했던 ChannelFactory(스레드 설정) 및 EventLoop 설정 등을 동일하게 할 수 있다.
 (LoopResource 설정 및 Option을 설정한다.)
 <br/>
+
 # doOn...종류
 doOn종류의 메서드를 통해 handler를 통해 codec을 등록한다.
 이때, doOn에서 client또는server에서 메시지를 보낼 경우에는 Mono타입은 불가하며 ByteBuf타입으로 받고 전송한다.
 그러나, handle메서드에서는 Mono나 Flux타입으로 전송 가능하다.
 (handle메소드에 등록한 Bifunction 자체가 클라이언트와 IO 통신 하는 로직)
 <br/>
+
 # doOn..상세
 - doOnBind: serverChannel이 bind되었을때 호출, 서버 옵션 설정할때 필요해보임(ServerChannel handler 설정은 여기서 진행해야 한다.)
 - doOnBound: serverChannel이 bound되었을때 호출, 위와 동일하지만 DisposableServer를 리턴, 연결 끊는것이 가능하다.

@@ -30,7 +30,7 @@ doOn종류의 메서드를 통해 handler를 통해 codec을 등록한다.
 - then : chain형태로 여러 Observer 등록 가능
 - currenctContext로 context가져오는 것도 가능하다.
 - TcpServer.observe로 등록 가능
-
+<br/>
 # LoopResource
 - TcpServer.runOn을 통해 기존의 Netty처럼 EventLoop 설정이 가능하다.
 

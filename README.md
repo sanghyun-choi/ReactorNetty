@@ -24,6 +24,7 @@ doOn종류의 메서드를 통해 handler를 통해 codec을 등록한다.
 - doOnConnection: 클라이언트와 연동되었을때 호출, childHandler 설정 가능(내부적으로 connection에 대한 pipeline 설정)
 - doOnUnBound: serverChannel 종료시, DispoabvleServer를 리턴, 연결 끊는 것이 가능하다.
 <br/>
+
 # ConnectionObserver
 - 연결에 대한 context를 다룰 수 있음, 커넥션에 대한 이벤트 리스너, ThreadLocal같은 형태의 저장소라고 보면됨
 - onStateChange: 커넥션에 상태 변화에 따라 값을 가져올 수 있다.
@@ -31,6 +32,7 @@ doOn종류의 메서드를 통해 handler를 통해 codec을 등록한다.
 - currenctContext로 context가져오는 것도 가능하다.
 - TcpServer.observe로 등록 가능
 <br/>
+
 # LoopResource
 - TcpServer.runOn을 통해 기존의 Netty처럼 EventLoop 설정이 가능하다.
 - 자세한 내

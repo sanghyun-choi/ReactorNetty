@@ -33,5 +33,5 @@ doOn종류의 메서드를 통해 handler를 통해 codec을 등록한다.
 <br/>
 # LoopResource
 - TcpServer.runOn을 통해 기존의 Netty처럼 EventLoop 설정이 가능하다.
-
+- 자세한 내
 
